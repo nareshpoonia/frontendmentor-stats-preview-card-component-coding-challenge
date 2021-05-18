@@ -1,0 +1,90 @@
+:root{
+--very-dark-blue : hsl(233, 47%, 7%);
+--dark-desaturated-blue: hsl(244, 38%, 16%);
+--soft-violet: hsl(277, 64%, 61%);
+--white: hsl(0, 0%, 100%);
+--slightly-transparent-white: hsla(0, 0%, 100%, 0.75);
+--slightly-transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--very-dark-blue);
+}
+
+p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: var(--white);
+    padding: 10px;
+    font-family: "Inter", sans-serif;
+} 
+
+ul{
+    color: var(--white);
+    padding-left: 20px;
+    display: grid;
+    display: block;
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+ul li span{
+    margin-bottom: 20px;
+}
+
+.container-1 .card ul li {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container-1 {
+    background-color: var(--dark-desaturated-blue);
+    border: 1px #ccc solid;
+    grid-template-columns: 1fr 1fr ;
+    grid-template-rows:1fr 1fr 1fr;
+    text-align: center;
+    padding: 20px 10px 0px 10px;
+    color:var(--white);
+    
+}
+
+
+.container-1 .image {
+    background: url(./images/image-header-mobile.jpg) no-repeat center/cover;
+    height: 400px;
+    
+}
+
+.container-1 .image .overlay {
+    background-color: hsla(277,64%,61%,0.7);
+    height: 400px;
+    padding: 10px 0px 0px 0px;
+}
+
+title{
+    /*
+    grid-column-start: 1;
+    grid-column-end: 3;
+    */
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.paragraph{
+    grid-row-start: span 1;
+    grid-row-end: 1;
+}
+.list{
+    grid-column: span 6;
+}
+.image{
+    grid-column: span 12;
+}
+
+.attribution { font-size: 11px; text-align: center;
+color: var(--white); }
+    .attribution a { color: hsl(228, 45%, 44%); }   
