@@ -14,10 +14,9 @@
 body {
   font-family: "Lexend Deca", sans-serif;
   background-color: var(--very-dark-blue);
-  /* min-height: 100vh; */
 }
 
-h1{
+h1 {
   margin-top: 10px;
 }
 
@@ -31,6 +30,9 @@ p {
 }
 
 ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   color: var(--white);
   padding-left: 20px;
   list-style-type: none;
@@ -53,6 +55,9 @@ ul li span {
 
 .container-1 {
   background-color: var(--dark-desaturated-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
   justify-items: center;
   padding: 0px 0px 20px 0px;
@@ -63,31 +68,19 @@ ul li span {
 }
 
 .container-1 .image {
-  background: url(./images/image-header-mobile.jpg),var(--soft-violet);
+  background: url(./images/image-header-mobile.jpg), var(--soft-violet);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: multiply;
-  /* width: 100%; */
-  /* max-width: 100%; */
-  /* max-width: 400px;
-  height: auto; */
-  height: 400px;
-  /* max-height: 100%; */
-  /* object-fit: none; */
-  /* object-fit: contain ; */
-  /* width: 100%; */
+  width: 100%;
+  height: 40vh;
   border-radius: 10px 10px 0px 0px;
 }
 
-/* .container-1 .image .overlay {
-  background-color: hsla(277, 92%, 21%, 0.925);
-  height: 400px;
-  /* width: 100%; */
-  padding: 10px 0px 0px 0px;
-  border-radius: 10px 10px 0px 0px;
-} */
 .card-text {
-  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .attribution {
@@ -104,37 +97,28 @@ ul li span {
   .container-1 {
     display: flex;
     flex-direction: row-reverse;
-    /* align-items: center; */
     padding-bottom: 0px;
     justify-content: center;
     justify-items: center;
     padding-left: 0px;
     margin-left: 150px;
-    margin-top: 180px;
+    margin-top: 120px;
     margin-right: 150px;
-    /* min-height: 100vh; */
     padding-bottom: 0px;
     border-radius: 10px 0px 0px 10px;
-    /* max-width: 1024px; */
   }
 
   .container-1 .image {
-    background: url(./images/image-header-desktop.jpg),var(--soft-violet);
+    background: url(./images/image-header-desktop.jpg), var(--soft-violet);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 150%;
-    height: 510px;
+    /* width: 150%; */
+    height: 525px;
     padding-bottom: 0px;
     margin-bottom: 0px;
     border-radius: 0px 10px 10px 0px;
-    background-blend-mode:multiply;
+    background-blend-mode: multiply;
   }
-  /* .container-1 .image .overlay {
-    background-color: hsla(277, 54%, 36%, 0.925);
-    height: 510px;
-    padding: 10px 0px 0px 0px;
-    border-radius: 0px 10px 10px 0px;
-  } */
 
   ul {
     display: flex;
@@ -165,9 +149,9 @@ ul li span {
   }
 
   .card-text {
-    margin-top: 80px;
+    margin-top: 0px;
     margin-left: 40px;
-    margin-right: 100px;
+    margin-right: 40px;
     text-align: left;
     word-wrap: break-word;
   }
