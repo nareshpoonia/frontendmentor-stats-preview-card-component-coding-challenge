@@ -122,6 +122,8 @@ ul li span {
 
   ul {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: left;
     padding-left: 0px;
     font-size: 2.5em;
@@ -129,7 +131,6 @@ ul li span {
   }
 
   li {
-    flex: 1;
     font-family: "Lexend Deca", sans-serif;
     font-size: 15px;
     font-weight: normal;
