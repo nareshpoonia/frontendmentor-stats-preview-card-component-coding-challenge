@@ -57,6 +57,8 @@ ul li span {
   margin: 50px 10px;
   align-items: center;
   color: var(--white);
+  min-width: 320px;
+  max-width: 480px;
   border-radius: 0px 0px 10px 10px;
 }
 
@@ -96,6 +98,7 @@ ul li span {
     justify-content: center;
     margin: 120px 120px 120px 120px;
     border-radius: 10px 0px 0px 10px;
+    max-width: 1400px;
   }
 
   .container-1 .image {
